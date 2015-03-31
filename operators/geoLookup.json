@@ -1,0 +1,37 @@
+[
+   {
+      "name" : "geoLookup",
+      "type" : "op",
+      "ret" : 0,
+      "param" : "",
+      "input" : ""
+   },
+   {
+      "type" : "op",
+      "ret" : 0,
+      "name" : "geoLookup",
+      "param" : "TestCase",
+      "input" : ""
+   },
+   {
+      "ret" : 0,
+      "type" : "op",
+      "name" : "geoLookup",
+      "input" : "127.0.0.1",
+      "param" : ""
+   },
+   {
+      "input" : "216.75.21.122",
+      "param" : "",
+      "ret" : 0,
+      "type" : "op",
+      "name" : "geoLookup"
+   },
+   {
+      "input" : "www.modsecurity.org",
+      "param" : "",
+      "type" : "op",
+      "ret" : 0,
+      "name" : "geoLookup"
+   }
+]

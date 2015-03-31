@@ -1,0 +1,58 @@
+[
+   {
+      "param" : "",
+      "input" : "",
+      "ret" : 1,
+      "type" : "op",
+      "name" : "rx"
+   },
+   {
+      "name" : "rx",
+      "type" : "op",
+      "ret" : 0,
+      "param" : "TestCase",
+      "input" : ""
+   },
+   {
+      "ret" : 1,
+      "type" : "op",
+      "name" : "rx",
+      "param" : "",
+      "input" : "TestCase"
+   },
+   {
+      "param" : "abc",
+      "input" : "abcdefghi",
+      "type" : "op",
+      "ret" : 1,
+      "name" : "rx"
+   },
+   {
+      "param" : "def",
+      "input" : "abcdefghi",
+      "type" : "op",
+      "ret" : 1,
+      "name" : "rx"
+   },
+   {
+      "param" : "ghi",
+      "input" : "abcdefghi",
+      "name" : "rx",
+      "type" : "op",
+      "ret" : 1
+   },
+   {
+      "ret" : 0,
+      "type" : "op",
+      "name" : "rx",
+      "param" : "ghij",
+      "input" : "abcdefghi"
+   },
+   {
+      "ret" : 1,
+      "type" : "op",
+      "name" : "rx",
+      "param" : "(?i:(sleep\\((\\s*?)(\\d*?)(\\s*?)\\)|benchmark\\((.*?)\\,(.*?)\\)))",
+      "input" : "SELECT pg_sleep(10);"
+   }
+]
