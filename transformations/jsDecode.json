@@ -1,0 +1,114 @@
+[
+   {
+      "output" : "",
+      "ret" : 0,
+      "input" : "",
+      "name" : "jsDecode",
+      "type" : "tfn"
+   },
+   {
+      "output" : "TestCase",
+      "ret" : 0,
+      "type" : "tfn",
+      "input" : "TestCase",
+      "name" : "jsDecode"
+   },
+   {
+      "ret" : 0,
+      "input" : "Test\u0000Case",
+      "type" : "tfn",
+      "name" : "jsDecode",
+      "output" : "Test\u0000Case"
+   },
+   {
+      "output" : "\u0007\b\f\n\r\t\u000b?'\"\u0000\nS\u0000ÿ!!",
+      "input" : "\\a\\b\\f\\n\\r\\t\\v\\?\\'\\\"\\0\\12\\123\\x00\\xff\\u0021\\uff01",
+      "name" : "jsDecode",
+      "type" : "tfn",
+      "ret" : 1
+   },
+   {
+      "output" : "\u0007\b\f\n\r\t\u000b\u0000?'\"\u0000\nS\u0000ÿ!!",
+      "ret" : 1,
+      "type" : "tfn",
+      "input" : "\\a\\b\\f\\n\\r\\t\\v\u0000\\?\\'\\\"\\0\\12\\123\\x00\\xff\\u0021\\uff01",
+      "name" : "jsDecode"
+   },
+   {
+      "output" : "8966u00agu00gau0zaauz0aaxagxga\n3u00a",
+      "input" : "\\8\\9\\666\\u00ag\\u00ga\\u0zaa\\uz0aa\\xag\\xga\\0123\\u00a",
+      "type" : "tfn",
+      "name" : "jsDecode",
+      "ret" : 1
+   },
+   {
+      "input" : "\\x",
+      "name" : "jsDecode",
+      "type" : "tfn",
+      "ret" : 1,
+      "output" : "x"
+   },
+   {
+      "output" : "xx0",
+      "ret" : 1,
+      "name" : "jsDecode",
+      "input" : "\\x\\x0",
+      "type" : "tfn"
+   },
+   {
+      "output" : "xx0\u0000",
+      "type" : "tfn",
+      "input" : "\\x\\x0\u0000",
+      "name" : "jsDecode",
+      "ret" : 1
+   },
+   {
+      "output" : "u",
+      "input" : "\\u",
+      "name" : "jsDecode",
+      "type" : "tfn",
+      "ret" : 1
+   },
+   {
+      "input" : "\\u\\u0",
+      "name" : "jsDecode",
+      "type" : "tfn",
+      "ret" : 1,
+      "output" : "uu0"
+   },
+   {
+      "ret" : 1,
+      "type" : "tfn",
+      "input" : "\\u\\u0\\u01",
+      "name" : "jsDecode",
+      "output" : "uu0u01"
+   },
+   {
+      "input" : "\\u\\u0\\u01\\u012",
+      "type" : "tfn",
+      "name" : "jsDecode",
+      "ret" : 1,
+      "output" : "uu0u01u012"
+   },
+   {
+      "ret" : 1,
+      "input" : "\\u\\u0\\u01\\u012\u0000",
+      "type" : "tfn",
+      "name" : "jsDecode",
+      "output" : "uu0u01u012\u0000"
+   },
+   {
+      "input" : "\\",
+      "type" : "tfn",
+      "name" : "jsDecode",
+      "ret" : 0,
+      "output" : "\\"
+   },
+   {
+      "output" : "\\0",
+      "ret" : 1,
+      "input" : "\\\\0",
+      "type" : "tfn",
+      "name" : "jsDecode"
+   }
+]
