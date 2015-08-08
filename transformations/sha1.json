@@ -1,0 +1,23 @@
+[
+   {
+      "type" : "tfn",
+      "input" : "",
+      "name" : "sha1",
+      "ret" : 1,
+      "output" : "Ú9£î^kK\r2U¿ï`\u0018¯Ø\u0007\t"
+   },
+   {
+      "ret" : 1,
+      "type" : "tfn",
+      "input" : "TestCase",
+      "name" : "sha1",
+      "output" : "§\fãã\u0018½+á\u0001\u0011ÆÜv½,Ùí"
+   },
+   {
+      "output" : "c¿`Ç\u0010Z\u0007¢±%»øa«Ú¼ixÂ",
+      "input" : "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b",
+      "name" : "sha1",
+      "type" : "tfn",
+      "ret" : 1
+   }
+]

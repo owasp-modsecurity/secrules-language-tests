@@ -1,0 +1,135 @@
+[
+   {
+      "output" : "",
+      "type" : "tfn",
+      "input" : "",
+      "name" : "urlDecode",
+      "ret" : 0
+   },
+   {
+      "input" : "TestCase",
+      "name" : "urlDecode",
+      "type" : "tfn",
+      "ret" : 0,
+      "output" : "TestCase"
+   },
+   {
+      "name" : "urlDecode",
+      "input" : "Test\u0000Case",
+      "type" : "tfn",
+      "ret" : 0,
+      "output" : "Test\u0000Case"
+   },
+   {
+      "type" : "tfn",
+      "input" : "+%00%01%02%03%04%05%06%07%08%09%0a%0b%0c%0d%0e%0f%10%11%12%13%14%15%16%17%18%19%1a%1b%1c%1d%1e%1f%20%21%22%23%24%25%26%27%28%29%2a%2b%2c%2d%2e%2f%30%31%32%33%34%35%36%37%38%39%3a%3b%3c%3d%3e%3f%40%41%42%43%44%45%46%47%48%49%4a%4b%4c%4d%4e%4f%50%51%52%53%54%55%56%57%58%59%5a%5b%5c%5d%5e%5f%60%61%62%63%64%65%66%67%68%69%6a%6b%6c%6d%6e%6f%70%71%72%73%74%75%76%77%78%79%7a%7b%7c%7d%7e%7f%80%81%82%83%84%85%86%87%88%89%8a%8b%8c%8d%8e%8f%90%91%92%93%94%95%96%97%98%99%9a%9b%9c%9d%9e%9f%a0%a1%a2%a3%a4%a5%a6%a7%a8%a9%aa%ab%ac%ad%ae%af%b0%b1%b2%b3%b4%b5%b6%b7%b8%b9%ba%bb%bc%bd%be%bf%c0%c1%c2%c3%c4%c5%c6%c7%c8%c9%ca%cb%cc%cd%ce%cf%d0%d1%d2%d3%d4%d5%d6%d7%d8%d9%da%db%dc%dd%de%df%e0%e1%e2%e3%e4%e5%e6%e7%e8%e9%ea%eb%ec%ed%ee%ef%f0%f1%f2%f3%f4%f5%f6%f7%f8%f9%fa%fb%fc%fd%fe%ff",
+      "name" : "urlDecode",
+      "ret" : 1,
+      "output" : " \u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ"
+   },
+   {
+      "output" : "Test Case",
+      "name" : "urlDecode",
+      "input" : "Test+Case",
+      "type" : "tfn",
+      "ret" : 1
+   },
+   {
+      "output" : "% ",
+      "ret" : 1,
+      "name" : "urlDecode",
+      "input" : "%+",
+      "type" : "tfn"
+   },
+   {
+      "ret" : 1,
+      "input" : "%%20",
+      "type" : "tfn",
+      "name" : "urlDecode",
+      "output" : "% "
+   },
+   {
+      "input" : "%0g%20",
+      "name" : "urlDecode",
+      "type" : "tfn",
+      "ret" : 1,
+      "output" : "%0g "
+   },
+   {
+      "output" : "%0 ",
+      "input" : "%0%20",
+      "type" : "tfn",
+      "name" : "urlDecode",
+      "ret" : 1
+   },
+   {
+      "ret" : 1,
+      "input" : "%g0%20",
+      "type" : "tfn",
+      "name" : "urlDecode",
+      "output" : "%g0 "
+   },
+   {
+      "output" : "%g ",
+      "ret" : 1,
+      "name" : "urlDecode",
+      "input" : "%g%20",
+      "type" : "tfn"
+   },
+   {
+      "output" : "%0%1%2%3%4%5%6%7%8%9%0%a%b%c%d%e%f",
+      "input" : "%0%1%2%3%4%5%6%7%8%9%0%a%b%c%d%e%f",
+      "type" : "tfn",
+      "name" : "urlDecode",
+      "ret" : 0
+   },
+   {
+      "output" : "%g0%g1%g2%g3%g4%g5%g6%g7%g8%g9%g0%ga%gb%gc%gd%ge%gf",
+      "ret" : 0,
+      "name" : "urlDecode",
+      "input" : "%g0%g1%g2%g3%g4%g5%g6%g7%g8%g9%g0%ga%gb%gc%gd%ge%gf",
+      "type" : "tfn"
+   },
+   {
+      "output" : "%0g%1g%2g%3g%4g%5g%6g%7g%8g%9g%0g%ag%bg%cg%dg%eg%fg",
+      "type" : "tfn",
+      "input" : "%0g%1g%2g%3g%4g%5g%6g%7g%8g%9g%0g%ag%bg%cg%dg%eg%fg",
+      "name" : "urlDecode",
+      "ret" : 0
+   },
+   {
+      "ret" : 0,
+      "type" : "tfn",
+      "input" : "%",
+      "name" : "urlDecode",
+      "output" : "%"
+   },
+   {
+      "output" : "%0",
+      "ret" : 0,
+      "name" : "urlDecode",
+      "input" : "%0",
+      "type" : "tfn"
+   },
+   {
+      "output" : "%%",
+      "ret" : 0,
+      "name" : "urlDecode",
+      "input" : "%%",
+      "type" : "tfn"
+   },
+   {
+      "output" : "%0g",
+      "ret" : 0,
+      "input" : "%0g",
+      "type" : "tfn",
+      "name" : "urlDecode"
+   },
+   {
+      "input" : "%gg",
+      "name" : "urlDecode",
+      "type" : "tfn",
+      "ret" : 0,
+      "output" : "%gg"
+   }
+]

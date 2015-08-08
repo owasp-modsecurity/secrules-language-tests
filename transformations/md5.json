@@ -1,0 +1,23 @@
+[
+   {
+      "output" : "Ô\u001dÙ\u0000²\u0004é\tìøB~",
+      "ret" : 1,
+      "input" : "",
+      "type" : "tfn",
+      "name" : "md5"
+   },
+   {
+      "input" : "TestCase",
+      "type" : "tfn",
+      "name" : "md5",
+      "ret" : 1,
+      "output" : "É«¢Ãæ\u0001&\u0016é¢k¢sÁ"
+   },
+   {
+      "output" : "¦çÓ´oß¯\u000bÞ*\u001f*\u0000ÒÞ",
+      "ret" : 1,
+      "input" : "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b",
+      "name" : "md5",
+      "type" : "tfn"
+   }
+]

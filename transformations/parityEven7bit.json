@@ -1,0 +1,30 @@
+[
+   {
+      "name" : "parityEven7bit",
+      "input" : "",
+      "type" : "tfn",
+      "ret" : 0,
+      "output" : ""
+   },
+   {
+      "output" : "cefijloqrtwx03569ABDGHKMNPSUVYZ",
+      "ret" : 0,
+      "name" : "parityEven7bit",
+      "input" : "cefijloqrtwx03569ABDGHKMNPSUVYZ",
+      "type" : "tfn"
+   },
+   {
+      "output" : "áâcäefçèijëlíîoðqrótõöwxùú0±²3´56·¸9ABÃDÅÆGHÉÊKÌMNÏPÑÒSÔUV×ØYZ",
+      "name" : "parityEven7bit",
+      "input" : "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "type" : "tfn",
+      "ret" : 1
+   },
+   {
+      "output" : "áâcäefçèijëlíîoðqrótõöwxùú\u00000±²3´56·¸9\u0000ABÃDÅÆGHÉÊKÌMNÏPÑÒSÔUV×ØYZ",
+      "input" : "abcdefghijklmnopqrstuvwxyz\u00000123456789\u0000ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "type" : "tfn",
+      "name" : "parityEven7bit",
+      "ret" : 1
+   }
+]

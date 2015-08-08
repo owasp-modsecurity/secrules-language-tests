@@ -1,0 +1,44 @@
+[
+   {
+      "ret" : 1,
+      "input" : "",
+      "type" : "tfn",
+      "name" : "hexDecode",
+      "output" : ""
+   },
+   {
+      "output" : "TestCase",
+      "ret" : 1,
+      "name" : "hexDecode",
+      "input" : "5465737443617365",
+      "type" : "tfn"
+   },
+   {
+      "type" : "tfn",
+      "input" : "546573740043617365",
+      "name" : "hexDecode",
+      "ret" : 1,
+      "output" : "Test\u0000Case"
+   },
+   {
+      "output" : "\u0001#Eg\n#\u0001#Eg\n",
+      "type" : "tfn",
+      "input" : "01234567890a0z01234567890a",
+      "name" : "hexDecode",
+      "ret" : 1
+   },
+   {
+      "output" : "\u0001#Eg\n",
+      "input" : "01234567890az",
+      "name" : "hexDecode",
+      "type" : "tfn",
+      "ret" : 1
+   },
+   {
+      "output" : "\u0001#Eg\n",
+      "type" : "tfn",
+      "input" : "01234567890a0",
+      "name" : "hexDecode",
+      "ret" : 1
+   }
+]
