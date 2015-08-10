@@ -189,7 +189,7 @@
       "name" : "validateUtf8Encoding"
    },
    {
-      "input" : "\u0000ä",
+      "input" : "\\0\\xe4",
       "param" : "",
       "name" : "validateUtf8Encoding",
       "ret" : 1,
@@ -199,21 +199,21 @@
       "name" : "validateUtf8Encoding",
       "ret" : 1,
       "type" : "op",
-      "input" : "ä",
+      "input" : "\\xe4",
       "param" : ""
    },
    {
       "name" : "validateUtf8Encoding",
       "type" : "op",
       "ret" : 1,
-      "input" : "\u0003¿",
+      "input" : "\\x03\\xbf",
       "param" : ""
    },
    {
       "type" : "op",
       "ret" : 1,
       "name" : "validateUtf8Encoding",
-      "input" : "É;",
+      "input" : "\\xc9\\x3b",
       "param" : ""
    },
    {
@@ -221,6 +221,6 @@
       "ret" : 1,
       "type" : "op",
       "param" : "",
-      "input" : "ÿ\u0000"
+      "input" : "\\xFF\\0"
    }
 ]
