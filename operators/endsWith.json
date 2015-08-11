@@ -42,7 +42,7 @@
       "ret" : 1
    },
    {
-      "input" : "abcdef\u0000ghi",
+      "input" : "abcdef\\0ghi",
       "param" : "ghi",
       "type" : "op",
       "ret" : 1,
