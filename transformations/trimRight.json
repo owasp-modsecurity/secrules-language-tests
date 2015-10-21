@@ -14,11 +14,11 @@
       "output" : "TestCase"
    },
    {
-      "input" : "Test\u0000Case",
+      "input" : "Test\\u0000Case",
       "type" : "tfn",
       "name" : "trimRight",
       "ret" : 0,
-      "output" : "Test\u0000Case"
+      "output" : "Test\\u0000Case"
    },
    {
       "output" : "    TestCase",
@@ -50,16 +50,16 @@
    },
    {
       "ret" : 1,
-      "input" : "    Test \u0000 Case    ",
+      "input" : "    Test \\u0000 Case    ",
       "name" : "trimRight",
       "type" : "tfn",
-      "output" : "    Test \u0000 Case"
+      "output" : "    Test \\u0000 Case"
    },
    {
       "name" : "trimRight",
-      "input" : " \t   Test \u0000 Case \t  \t   \r\n  ",
+      "input" : " \t   Test12 \\u0000 Case \t  \t   \r\n  ",
       "type" : "tfn",
       "ret" : 1,
-      "output" : " \t   Test \u0000 Case"
+      "output" : " \t   Test12 \\u0000 Case"
    }
 ]
