@@ -14,8 +14,8 @@
       "output" : "TestCase"
    },
    {
-      "output" : "Test\u0001Case",
-      "input" : "Test\u0001Case",
+      "output" : "Test\\u0001Case",
+      "input" : "Test\\u0001Case",
       "type" : "tfn",
       "name" : "removeNulls",
       "ret" : 0
