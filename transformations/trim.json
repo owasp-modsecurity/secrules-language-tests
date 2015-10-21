@@ -50,16 +50,16 @@
    },
    {
       "name" : "trim",
-      "input" : "    Test \u0000 Case    ",
+      "input" : "    Test \\u0000 Case    ",
       "type" : "tfn",
       "ret" : 1,
-      "output" : "Test \u0000 Case"
+      "output" : "Test \\u0000 Case"
    },
    {
-      "input" : " \t   Test \u0000 Case \t  \t   \r\n  ",
+      "input" : " \t   Test \\u0000 Case \t  \t   \r\n  ",
       "name" : "trim",
       "type" : "tfn",
       "ret" : 1,
-      "output" : "Test \u0000 Case"
+      "output" : "Test \\u0000 Case"
    }
 ]
