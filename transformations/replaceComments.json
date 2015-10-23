@@ -15,10 +15,10 @@
    },
    {
       "ret" : 0,
-      "input" : "Test\u0000Case",
+      "input" : "Test\\u0000Case",
       "name" : "replaceComments",
       "type" : "tfn",
-      "output" : "Test\u0000Case"
+      "output" : "Test\\u0000Case"
    },
    {
       "ret" : 1,
@@ -64,7 +64,7 @@
    },
    {
       "type" : "tfn",
-      "input" : "/* Test\nCase */",
+      "input" : "/* Test\\nCase */",
       "name" : "replaceComments",
       "ret" : 1,
       "output" : " "
