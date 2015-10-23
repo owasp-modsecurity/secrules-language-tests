@@ -18,7 +18,7 @@
       "input" : "546573740043617365",
       "name" : "hexDecode",
       "ret" : 1,
-      "output" : "Test\u0000Case"
+      "output" : "Test\\u0000Case"
    },
    {
       "output" : "\u0001#Eg\n#\u0001#Eg\n",
