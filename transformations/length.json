@@ -22,7 +22,7 @@
    },
    {
       "output" : "9",
-      "input" : "Test\u0000Case",
+      "input" : "Test\\u0000Case",
       "type" : "tfn",
       "name" : "length",
       "ret" : 1
