@@ -15,10 +15,10 @@
    },
    {
       "ret" : 0,
-      "input" : "/foo/bar\u0000/baz",
+      "input" : "/foo/bar\\u0000/baz",
       "name" : "normalisePath",
       "type" : "tfn",
-      "output" : "/foo/bar\u0000/baz"
+      "output" : "/foo/bar\\u0000/baz"
    },
    {
       "name" : "normalisePath",
@@ -213,7 +213,7 @@
       "output" : "/etc/passwd",
       "ret" : 1,
       "type" : "tfn",
-      "input" : "/./.././../../../../../../../\u0000/../etc/./passwd",
+      "input" : "/./.././../../../../../../../\\u0000/../etc/./passwd",
       "name" : "normalisePath"
    }
 ]
