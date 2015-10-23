@@ -16,7 +16,7 @@
    {
       "output" : "546573740043617365",
       "name" : "hexEncode",
-      "input" : "Test\u0000Case",
+      "input" : "Test\\u0000Case",
       "type" : "tfn",
       "ret" : 1
    }
