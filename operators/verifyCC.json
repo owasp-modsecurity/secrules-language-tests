@@ -374,9 +374,8 @@
       "param" : "(?:^|[^\\d])(\\d+)(?:[^\\d]|$)",
       "input" : "1234567890012345",
       "type" : "op",
-      "ret" : 1,
-      "name" : "verifyCC",
-      "comment" : "originally this test case was expecting 0 but i guess that is the wrong answer, changing it..."
+      "ret" : 0,
+      "name" : "verifyCC"
    },
    {
       "name" : "verifyCC",
@@ -438,9 +437,8 @@
       "param" : "(?:^|[^\\d])(\\d{4}\\-?\\d{4}\\-?\\d{2}\\-?\\d{2}\\-?\\d{1,4})(?:[^\\d]|$)",
       "input" : "5484605089158217",
       "name" : "verifyCC",
-      "ret" : 1,
-      "type" : "op",
-      "comment" : "originally this test case was expecting 0 but i guess that is the wrong answer, changing it..."
+      "ret" : 0,
+      "type" : "op"
    },
    {
       "input" : "5574407071807154",
@@ -467,9 +465,8 @@
       "input" : "15484605089158216",
       "param" : "(?:^|[^\\d])(\\d{4}\\-?\\d{4}\\-?\\d{2}\\-?\\d{2}\\-?\\d{1,4})(?:[^\\d]|$)",
       "name" : "verifyCC",
-      "ret" : 1,
-      "type" : "op",
-      "comment" : "originally this test case was expecting 0 but i guess that is the wrong answer, changing it..."
+      "ret" : 0,
+      "type" : "op"
    },
    {
       "type" : "op",
