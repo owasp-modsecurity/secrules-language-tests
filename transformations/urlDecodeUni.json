@@ -14,9 +14,9 @@
       "ret" : 0
    },
    {
-      "output" : "Test\u0000Case",
+      "output" : "Test\\u0000Case",
       "name" : "urlDecodeUni",
-      "input" : "Test\u0000Case",
+      "input" : "Test\\u0000Case",
       "type" : "tfn",
       "ret" : 0
    },
