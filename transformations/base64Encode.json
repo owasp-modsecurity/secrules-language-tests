@@ -31,7 +31,7 @@
       "output" : "VGVzdABDYXNl",
       "ret" : 1,
       "name" : "base64Encode",
-      "input" : "Test\u0000Case",
+      "input" : "Test\\u0000Case",
       "type" : "tfn"
    }
 ]
