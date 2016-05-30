@@ -23,7 +23,7 @@
    {
       "output" : "\\xa6\\xe7\\xd3\\xb4o\\xdf\\xaf\\x0b\\xde*\\x1f\\x83*\\x00\\xd2\\xde",
       "ret" : 1,
-      "input" : "\\u0000\\u0001\\u0002\\u0003\\u0004\\u0005\\u0006\\u0007\\b",
+      "input" : "\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08",
       "name" : "md5",
       "type" : "tfn"
    },

@@ -21,22 +21,15 @@
       "output" : "Test\u0000Case"
    },
    {
-      "output" : "\u0007\b\f\n\r\t\u000b?'\"\u0000\nS\u0000ÿ!!",
-      "input" : "\\a\\b\\f\\n\\r\\t\\v\\?\\'\\\"\\0\\12\\123\\x00\\xff\\u0021\\uff01",
-      "name" : "jsDecode",
-      "type" : "tfn",
-      "ret" : 1
-   },
-   {
-      "output" : "\u0007\b\f\n\r\t\u000b\u0000?'\"\u0000\nS\u0000ÿ!!",
+      "input" : "\\\\a\\\\b\\\\f\\\\n\\\\r\\\\t\\\\v\\?\\'\\\"\\0\\12\\123\\x00\\xff",
+      "output" : "\\a\\b\\f\\n\\r\\t\\v?'\"\\x00\\x0a\\x53\\x00\\xff",
       "ret" : 1,
       "type" : "tfn",
-      "input" : "\\a\\b\\f\\n\\r\\t\\v\u0000\\?\\'\\\"\\0\\12\\123\\x00\\xff\\u0021\\uff01",
       "name" : "jsDecode"
    },
    {
-      "output" : "8966u00agu00gau0zaauz0aaxagxga\n3u00a",
-      "input" : "\\8\\9\\666\\u00ag\\u00ga\\u0zaa\\uz0aa\\xag\\xga\\0123\\u00a",
+      "output" : "8966\\x0a\\x00\\x00\\x00\\x0a\\x0a\\x0a3u00a",
+      "input" : "8966\\x0a\\x00\\x00\\x00\\x0a\\x0a\\x0a3u00a",
       "type" : "tfn",
       "name" : "jsDecode",
       "ret" : 1

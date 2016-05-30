@@ -25,21 +25,21 @@
       "input" : "\\a\\b\\f\\n\\r\\t\\v\\?\\'\\\"\\0\\12\\123\\x00\\xff",
       "name" : "escapeSeqDecode",
       "type" : "tfn",
-      "output" : "\u0007\b\f\n\r\t\u000b?'\"\\u0000\nS\\u0000ÿ"
+      "output" : "\u0007\b\f\n\r\t\u000b?'\"\\u0000\nS\\u0000\\xff"
    },
    {
       "ret" : 1,
       "type" : "tfn",
       "input" : "\\a\\b\\f\\n\\r\\t\\v\\u0000\\?\\'\\\"\\0\\12\\123\\x00\\xff",
       "name" : "escapeSeqDecode",
-      "output" : "\u0007\b\f\n\r\t\u000b\\u0000?'\"\\u0000\nS\\u0000ÿ"
+      "output" : "\u0007\b\f\n\r\t\u000b\\u0000?'\"\\u0000\nS\\u0000\\xff"
    },
    {
       "input" : "\\8\\9\\666\\xag\\xga\\0123",
       "type" : "tfn",
       "name" : "escapeSeqDecode",
       "ret" : 1,
-      "output" : "89¶xagxga\n3"
+      "output" : "89\\xb6\\xag\\xga\\x0a3"
    },
    {
       "output" : "x",

@@ -15,10 +15,10 @@
    },
    {
       "type" : "tfn",
-      "input" : "\\foo\\bar\u0000\\baz",
+      "input" : "\\foo\\bar\\u0000\\baz",
       "name" : "normalisePathWin",
       "ret" : 1,
-      "output" : "/foo/bar\u0000/baz"
+      "output" : "/foo/bar\\u0000/baz"
    },
    {
       "output" : "x",

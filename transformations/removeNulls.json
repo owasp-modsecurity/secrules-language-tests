@@ -21,7 +21,7 @@
       "ret" : 0
    },
    {
-      "input" : "\\0TestCase",
+      "input" : "\\x00TestCase",
       "type" : "tfn",
       "name" : "removeNulls",
       "ret" : 1,
@@ -30,12 +30,12 @@
    {
       "output" : "TestCase",
       "ret" : 1,
-      "input" : "Test\\0Case",
+      "input" : "Test\\x00Case",
       "name" : "removeNulls",
       "type" : "tfn"
    },
    {
-      "input" : "Test\\0\\0Case",
+      "input" : "Test\\x00\\x00Case",
       "type" : "tfn",
       "name" : "removeNulls",
       "ret" : 1,
@@ -44,14 +44,14 @@
    {
       "output" : "TestCase",
       "ret" : 1,
-      "input" : "TestCase\\0",
+      "input" : "TestCase\\x00",
       "name" : "removeNulls",
       "type" : "tfn"
    },
    {
       "output" : "TestCase",
       "type" : "tfn",
-      "input" : "\\0Test\\0Case\\0",
+      "input" : "\\x00Test\\x00Case\\x00",
       "name" : "removeNulls",
       "ret" : 1
    }
