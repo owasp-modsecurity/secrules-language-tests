@@ -1,5 +1,12 @@
 [
    {
+      "param" : "test",
+      "input" : "qqtestqq",
+      "ret" : 1,
+      "type" : "op",
+      "name" : "rx"
+   },
+   {
       "param" : "",
       "input" : "",
       "ret" : 1,
