@@ -2,6 +2,7 @@
    {
       "name" : "geoLookup",
       "type" : "op",
+      "resource": "geoip",
       "ret" : 0,
       "param" : "",
       "input" : ""
@@ -9,6 +10,7 @@
    {
       "type" : "op",
       "ret" : 0,
+      "resource": "geoip",
       "name" : "geoLookup",
       "param" : "TestCase",
       "input" : ""
@@ -16,6 +18,7 @@
    {
       "ret" : 0,
       "type" : "op",
+      "resource": "geoip",
       "name" : "geoLookup",
       "input" : "127.0.0.1",
       "param" : ""
@@ -23,6 +26,7 @@
    {
       "input" : "216.75.21.122",
       "param" : "",
+      "resource": "geoip",
       "ret" : 0,
       "type" : "op",
       "name" : "geoLookup"
@@ -30,6 +34,7 @@
    {
       "input" : "www.modsecurity.org",
       "param" : "",
+      "resource": "geoip",
       "type" : "op",
       "ret" : 0,
       "name" : "geoLookup"
