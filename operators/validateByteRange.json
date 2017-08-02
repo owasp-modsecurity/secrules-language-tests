@@ -47,5 +47,12 @@
       "name" : "validateByteRange",
       "ret" : 1,
       "type" : "op"
+   },
+   {
+      "input" : "\u00d0\u0090",
+      "param" : "0-255",
+      "name" : "validateByteRange",
+      "ret" : 0,
+      "type" : "op"
    }
 ]
