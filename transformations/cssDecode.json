@@ -23,7 +23,7 @@
    {
       "type" : "tfn",
       "ret" : 1,
-      "input" : "test\\a\\b\\f\\n\\r\\t\\v\\?\\'\\\"\\0\\12\\123\\1234\\12345\\123456\\ff01\\ff5e\\\n\\0  string",
+      "input" : "test\\a\\b\\f\\n\\r\\t\\v\\?\\'\\\"\\\u0000\\12\\123\\1234\\12345\\123456\\ff01\\ff5e\\\n\\\u0000  string",
       "name" : "cssDecode",
       "output" : "test\n\u000b\u000fnrtv?'\"\u0000\u0012#4EV!~\u0000 string"
    },
