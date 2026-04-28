@@ -19,8 +19,12 @@
       "ret" : 0,
       "type" : "op",
       "name" : "verifysvnr"
+   },
+   {
+      "param" : "([0-9]{4} ?[0-9]{6})",
+      "input" : "",
+      "ret" : 0,
+      "type" : "op",
+      "name" : "verifysvnr"
    }
-
-
-
 ]
