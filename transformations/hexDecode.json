@@ -40,5 +40,12 @@
        "input" : "01234567890a0",
        "output" : "\\x01#Eg\\x89\\x0a",
        "ret" : 1
+   },
+   {
+       "type" : "tfn",
+       "name" : "hexDecode",
+       "input" : "a",
+       "output" : "",
+       "ret" : 1
    }
 ]
