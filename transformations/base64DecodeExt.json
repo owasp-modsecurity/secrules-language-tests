@@ -40,5 +40,19 @@
       "name" : "base64DecodeExt",
       "type" : "tfn",
       "ret" : 1
+   },
+   {
+      "ret" : 1,
+      "input" : "dzBzV==YWxlcnQoMSk=",
+      "type" : "tfn",
+      "name" : "base64DecodeExt",
+      "output" : ""
+   },
+   {
+      "ret" : 1,
+      "input" : "eyJwIjoieHh-IiwiYWxnIjoibm9uZSIsInR5cCI6IkpXVCJ9",
+      "type" : "tfn",
+      "name" : "base64DecodeExt",
+      "output" : "{\"p\":\"xx~\",\"alg\":\"none\",\"typ\":\"JWT\"}"
    }
 ]
