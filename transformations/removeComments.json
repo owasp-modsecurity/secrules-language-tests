@@ -4,17 +4,17 @@
       "input" : "",
       "type" : "tfn",
       "name" : "removeComments",
-      "ret" : 1
+      "ret" : 0
    },
    {
       "input" : "TestCase",
       "type" : "tfn",
       "name" : "removeComments",
-      "ret" : 1,
+      "ret" : 0,
       "output" : "TestCase"
    },
    {
-      "ret" : 1,
+      "ret" : 0,
       "input" : "Test\\u0000Case",
       "name" : "removeComments",
       "type" : "tfn",
@@ -25,10 +25,10 @@
       "input" : "/* TestCase */",
       "name" : "removeComments",
       "type" : "tfn",
-      "output" : "\\x00"
+      "output" : ""
    },
    {
-      "output" : "\\x00",
+      "output" : "",
       "ret" : 1,
       "type" : "tfn",
       "input" : "/*TestCase*/",
@@ -39,10 +39,10 @@
       "type" : "tfn",
       "name" : "removeComments",
       "ret" : 1,
-      "output" : "\\x00"
+      "output" : ""
    },
    {
-      "output" : "\\x00",
+      "output" : "",
       "ret" : 1,
       "name" : "removeComments",
       "input" : "/*TestCase */",
@@ -60,35 +60,35 @@
       "name" : "removeComments",
       "input" : "Before TestCase */ After",
       "type" : "tfn",
-      "ret" : 1
+      "ret" : 0
    },
    {
       "type" : "tfn",
       "input" : "/* Test\\nCase */",
       "name" : "removeComments",
       "ret" : 1,
-      "output" : "\\x00"
+      "output" : ""
    },
    {
       "name" : "removeComments",
       "input" : "/* Test\r\nCase */",
       "type" : "tfn",
       "ret" : 1,
-      "output" : "\\x00"
+      "output" : ""
    },
    {
       "ret" : 1,
       "input" : "/* Test\nCase */",
       "type" : "tfn",
       "name" : "removeComments",
-      "output" : "\\x00"
+      "output" : ""
    },
    {
       "ret" : 1,
       "name" : "removeComments",
       "input" : "/* Test\rCase */",
       "type" : "tfn",
-      "output" : "\\x00"
+      "output" : ""
    },
    {
       "ret" : 1,
@@ -134,7 +134,7 @@
    },
    {
       "output" : "Test\r\nCase */After",
-      "ret" : 1,
+      "ret" : 0,
       "name" : "removeComments",
       "input" : "Test\r\nCase */After",
       "type" : "tfn"
@@ -145,5 +145,19 @@
       "type" : "tfn",
       "ret" : 1,
       "output" : "Test After"
+   },
+   {
+     "input" : "SELECT/**//**/UNION",
+     "name" : "removeComments",
+     "type" : "tfn",
+     "ret" : 1,
+     "output" : "SELECTUNION"
+   },
+   {
+     "input" : "foo<!-- comment 1 --><!-- comment 2 -->bar",
+     "name" : "removeComments",
+     "type" : "tfn",
+     "ret" : 1,
+     "output" : "foobar"
    }
 ]
