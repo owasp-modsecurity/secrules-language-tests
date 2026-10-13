@@ -16,6 +16,20 @@
    {
       "param" : "\\d{3}-?\\d{2}-?\\d{4}",
       "input" : "asdf 800-57-8065 asdf",
+      "ret" : 1,
+      "type" : "op",
+      "name" : "verifyssn"
+   },
+   {
+      "param" : "\\d{3}-?\\d{2}-?\\d{4}",
+      "input" : "asdf 900-57-8065 asdf",
+      "ret" : 0,
+      "type" : "op",
+      "name" : "verifyssn"
+   },
+   {
+      "param" : "\\d{3}-?\\d{2}-?\\d{4}",
+      "input" : "asdf 666-57-8065 asdf",
       "ret" : 0,
       "type" : "op",
       "name" : "verifyssn"
